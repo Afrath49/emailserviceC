@@ -20,7 +20,7 @@ namespace emailSendgrid
         {
 
 
-            var client = new SendGridClient("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");//Put your sendgrid api key;
+            var client = new SendGridClient("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");//Put your sendgrid api key;
 
             Console.Write("To: ");
             var to = Console.ReadLine();
