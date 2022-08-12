@@ -20,7 +20,7 @@ namespace emailSendgrid
         {
 
 
-            var client = new SendGridClient("api key");//for security reason i can't put my sendgrid api key;
+            var client = new SendGridClient("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");//Put your sendgrid api key;
 
             Console.Write("To: ");
             var to = Console.ReadLine();
@@ -36,7 +36,7 @@ namespace emailSendgrid
 
             var message = new SendGridMessage()
             {
-                From = new EmailAddress("afrath4964@gmail.com", "afraath"),
+                From = new EmailAddress("afrath4964@gmail.com", "afraath"),//Put the email which is used in sengrid api key creation
                 Subject = subject,
                 PlainTextContent = body
             };
